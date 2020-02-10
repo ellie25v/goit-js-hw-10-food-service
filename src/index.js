@@ -7,8 +7,8 @@ const Theme = {
     DARK: 'dark-theme',
 };
 
-const menuDraft = { menu: menu };
-console.log(menuDraft);
+const recepies = { menu: menu };
+console.log(recepies);
 
 
 const refs = {
@@ -24,7 +24,7 @@ const setInitialTheme = () => {
   }
 };
 
-refs.menuList.insertAdjacentHTML('beforeend', menuTemplate(menuDraft));
+refs.menuList.insertAdjacentHTML('beforeend', menuTemplate(recepies));
 setInitialTheme();
 
 const themeChange = () => {
