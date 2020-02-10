@@ -22,6 +22,10 @@ const setInitialTheme = () => {
     refs.themeCheckbox.checked = false;
     refs.body.classList.add(Theme.LIGHT);
   }
+  else{
+    refs.themeCheckbox.checked = true;
+    refs.body.classList.add(Theme.DARK);
+  }
 };
 
 refs.menuList.insertAdjacentHTML('beforeend', menuTemplate(recepies));
